@@ -12,7 +12,7 @@
 # 3. Obtain the OpenFAST executable
 	brew install cmake gcc
 
-	🔥 Speed Up
+
   ⏰ cd "$(brew --repo)" && git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
 
   if [ -d "$(brew --repo homebrew/core)" ]; then
