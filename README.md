@@ -44,38 +44,36 @@ Prerequisites (macOS)
    openfast -v
  
    #Clone and build OpenFAST
-# For macOS using Homebrew, this installs all dependencies
-brew install git cmake make openblas gcc
+   brew install git cmake make openblas gcc
 
-# Clone the repository from GitHub using git
-git clone https://github.com/OpenFAST/OpenFAST.git
+   #Clone the repository from GitHub using git
+   git clone https://github.com/OpenFAST/OpenFAST.git
 
-# Move into the OpenFAST directory
-cd OpenFAST
+   #Move into the OpenFAST directory
+   cd OpenFAST
 
-# Create the build directory and move into it
-mkdir build
-cd build
+   #Create the build directory and move into it
+   mkdir build
+   cd build
 
-# Execute CMake with the default options;
-# this step creates the Makefiles
-cmake ..
+   #Execute CMake with the default options; this step creates the Makefiles
+   cmake ..
 
-# Execute the Make-help command to list all available targets
+   #Execute the Make-help command to list all available targets
 make help
 
-# Choose a particular target or give no target to compile everything
-make hydrodyn_driver
-# or
-make openfast
-# or
-make
+   #Choose a particular target or give no target to compile everything
+   make hydrodyn_driver
+   #or
+   make openfast
+   #or
+   make
 
-# Test the compiled binary, for example
-./glue-codes/openfast/openfast -v
-./modules/hydrodyn/hydrodyn_driver -v
+   #Test the compiled binary, for example
+   ./glue-codes/openfast/openfast -v
+   ./modules/hydrodyn/hydrodyn_driver -v
 
-# Move the binaries and other run-time files to the install location
-make install
+   #Move the binaries and other run-time files to the install location
+   make install
 
    
