@@ -1,21 +1,21 @@
 # Get-started-with-OpenFAST
 
 Prerequisites (macOS)
-1. Install Homebrew
+# 1. Install Homebrew
    Visit https://brew.sh/ or run in Terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-2. Install system dependencies
-   # Python 3.10+, git, wget
+# 2. Install system dependencies
+   #Python 3.10+, git, wget
    brew install python git wget
 
-   # Recommended Python packages
+   #Recommended Python packages
    pip install numpy pandas matplotlib ruamel.yaml fastparquet h5py
 
-3. Obtain the OpenFAST executable
-   # Install build tools
+# 3. Obtain the OpenFAST executable
+   #Install build tools
    brew install cmake gcc
 
-   # By configuring a domestic mirror source, the speed of brew can be improved
+   #By configuring a domestic mirror source, the speed of brew can be improved
    cd "$(brew --repo)" && git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
 
    if [ -d "$(brew --repo homebrew/core)" ]; then
@@ -43,7 +43,7 @@ Prerequisites (macOS)
    which openfast
    openfast -v
  
-   # Clone and build OpenFAST
+   #Clone and build OpenFAST
 # For macOS using Homebrew, this installs all dependencies
 brew install git cmake make openblas gcc
 
